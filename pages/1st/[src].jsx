@@ -29,8 +29,8 @@ export default function oldExamsPdf() {
   }, []);
 
   return (
-    <div className="pt-[72px]">
-      <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
+    <div >
+      <button className="btn outline-2 text-white hover:border-mainColor bg-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor fixed top-1 z-50">
         <Link href={`/1st/oldExams/${src}.pdf`}>
           <a className=" hover:text-white">لتحميل الملف اضغط هنا</a>
         </Link>
