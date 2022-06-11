@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
+
 export default function oldExamsPdf() {
   const router = useRouter();
   const { src } = router.query;
