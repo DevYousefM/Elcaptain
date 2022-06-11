@@ -31,7 +31,11 @@ export default function oldExamsPdf() {
   return (
      <div>
       <button className="z-50 btn outline-2 hover:bg-mainColor bg-mainColor text-white fixed top-[76px] right-0">
-        <i class="fa-solid fa-download"></i>{" "}
+       <Link href={`/1st/oldExams/${src}.pdf`} download>
+          <a>
+            <i class="fa-solid fa-download"></i>{" "}
+          </a>
+        </Link>
       </button>
       <div ref={containerRef} style={{ height: "100vh" }} />
     </div>
