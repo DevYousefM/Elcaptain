@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useRouter } from "next/router";
 
 export default function oldExamsPdf() {
@@ -7,28 +7,35 @@ export default function oldExamsPdf() {
   const containerRef = useRef(null);
 
 
-    if (typeof window !== "undefined") {
+ 
       console.log(router.query.src);
-      const container = containerRef.current;
-      let PSPDFKit;
+
       const getDoc = async () => {
-        PSPDFKit = await import("pspdfkit");
-        if (PSPDFKit) {
-          PSPDFKit.unload(container);
-        }
-        await PSPDFKit.load({
-          container,
-          document: `/1st/oldExams/${src}.pdf`,
-          baseUrl: `${window.location.protocol}//${window.location.host}/`,
-        });
-      };
+        const container = containerRef.current;
+    let PSPDFKit;
+
+    (async function () {
+      PSPDFKit = await import("pspdfkit");
+      
+      if (PSPDFKit) {
+        PSPDFKit.unload(container);
+      }
+      
+      await PSPDFKit.load({
+        container,
+        document: "/document.pdf",
+        baseUrl: `${window.location.protocol}//${window.location.host}/`,
+      });
+    })();
+
+    return () => PSPDFKit && PSPDFKit.unload(container);
+      }
 
       if (typeof src !== "undefined") {
         getDoc();
       }
 
-      return () => PSPDFKit && PSPDFKit.unload(container);
-    }
+    
 
 
   return (
