@@ -7,7 +7,7 @@ export default function oldExamsPdf() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    
       console.log(router.query.src);
       const container = containerRef.current;
       let PSPDFKit;
@@ -21,7 +21,6 @@ export default function oldExamsPdf() {
           document: `/1st/oldExams/${src}.pdf`,
           baseUrl: `${window.location.protocol}//${window.location.host}/`,
         });
-      };
 
       if (typeof src !== "undefined") {
         getDoc();
