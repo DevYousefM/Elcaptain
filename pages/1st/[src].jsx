@@ -11,7 +11,7 @@ export default function oldExamsPdf() {
       console.log(router.query.src);
       const container = containerRef.current;
       let PSPDFKit;
-      const getDoc = async () => {
+      const getDoc = async (src) => {
         PSPDFKit = await import("pspdfkit");
         if (PSPDFKit) {
           PSPDFKit.unload(container);
@@ -21,13 +21,14 @@ export default function oldExamsPdf() {
           document: `/1st/oldExams/${src}.pdf`,
           baseUrl: `${window.location.protocol}//${window.location.host}/`,
         });
+        return () => PSPDFKit && PSPDFKit.unload(container);
       };
 
       if (typeof src !== "undefined") {
-        getDoc();
+        getDoc(src);
       }
 
-      return () => PSPDFKit && PSPDFKit.unload(container);
+      
     }
   }, []);
 
