@@ -8,7 +8,7 @@ export default function oldExamsPdf() {
 
    
 
-    if (typeof window !== "undefined") {
+  
       console.log(router.query.src);
       const container = containerRef.current;
       let PSPDFKit;
@@ -30,7 +30,7 @@ export default function oldExamsPdf() {
       }
 
             
-    }
+    
   
 
 
