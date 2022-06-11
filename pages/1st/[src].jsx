@@ -6,36 +6,28 @@ export default function oldExamsPdf() {
   const { src } = router.query;
   const containerRef = useRef(null);
 
+     useEffect(() => {
+    if (typeof window !== "undefined") {
+      const container = containerRef.current;
+      let PSPDFKit;
+      (async function () {
+        PSPDFKit = await import("pspdfkit");
 
- 
-      console.log(router.query.src);
+        if (PSPDFKit) {
+          PSPDFKit.unload(container);
+        }
 
-      const getDoc = async () => {
-        const container = containerRef.current;
-    let PSPDFKit;
+        await PSPDFKit.load({
+          container,
+          document: `/1st/oldExams/${src}.pdf`,
+          baseUrl: `${window.location.protocol}//${window.location.host}/`,
+        });
+      })();
 
-    (async function () {
-      PSPDFKit = await import("pspdfkit");
-      
-      if (PSPDFKit) {
-        PSPDFKit.unload(container);
-      }
-      
-      await PSPDFKit.load({
-        container,
-        document: `/1st/oldExams/${src}.pdf`,
-        baseUrl: `${window.location.protocol}//${window.location.host}/`,
-      });
-    })();
-
-    return () => PSPDFKit && PSPDFKit.unload(container);
-      }
-
-      if (typeof src !== "undefined") {
-        getDoc();
-      }
-
-    
+      return () => PSPDFKit && PSPDFKit.unload(container);
+    }
+    console.log(src);
+  }, []);
 
 
   return (
