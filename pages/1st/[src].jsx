@@ -29,7 +29,7 @@ export default function oldExamsPdf() {
   }, []);
 
   return (
-        <div className="pt-[72px] relative flex w-full justify-center">
+        <div className="pt-[72px] relative flex justify-center">
 
       <button className="btn outline-2 text-white hover:border-mainColor bg-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor absolute z-50 top-0">
         <Link href={`/1st/oldExams/${src}.pdf`}>
