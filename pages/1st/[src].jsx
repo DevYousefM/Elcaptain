@@ -10,7 +10,7 @@ export default function oldExamsPdf() {
     if (typeof window !== "undefined") {
       localStorage.setItem("key", src);
       const fileSource = localStorage.getItem("key");
-      src === "undefined" ? src === fileSource : src;
+      typeof src === "undefined" ? src === fileSource : src;
       console.log(src);
       const container = containerRef.current;
       let PSPDFKit;
