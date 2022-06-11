@@ -8,6 +8,8 @@ export default function oldExamsPdf() {
 
   console.log(router.query.src);
   useEffect(() => {
+        if (typeof window !== "undefined") {
+
     const container = containerRef.current;
     let PSPDFKit;
   console.log(router.query.src);
@@ -27,6 +29,7 @@ export default function oldExamsPdf() {
     })();
 
     return () => PSPDFKit && PSPDFKit.unload(container);
+        }
     console.log(router.query.src);
   }, []);
   return (
