@@ -7,11 +7,11 @@ export default function oldExamsPdf() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    
+    if (typeof window !== "undefined") {
       console.log(router.query.src);
       const container = containerRef.current;
       let PSPDFKit;
-      const getDoc = async (src) => {
+      const getDoc = async () => {
         PSPDFKit = await import("pspdfkit");
         if (PSPDFKit) {
           PSPDFKit.unload(container);
@@ -21,9 +21,10 @@ export default function oldExamsPdf() {
           document: `/1st/oldExams/${src}.pdf`,
           baseUrl: `${window.location.protocol}//${window.location.host}/`,
         });
+      };
 
       if (typeof src !== "undefined") {
-        getDoc(src);
+        getDoc();
       }
 
       return () => PSPDFKit && PSPDFKit.unload(container);
@@ -31,7 +32,7 @@ export default function oldExamsPdf() {
   }, []);
 
   return (
-  <div>
+    <div>
       <button className="z-50 btn outline-2 hover:bg-mainColor1 bg-mainColor1 text-white fixed top-[80px] right-1">
         <a
           className="hover:text-white"
@@ -43,7 +44,5 @@ export default function oldExamsPdf() {
       </button>
       <div ref={containerRef} style={{ height: "100vh" }} />
     </div>
-
-
   );
 }
