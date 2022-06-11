@@ -31,7 +31,8 @@ export default function oldExamsPdf() {
   return (
                  <div>
       <button className="z-50 btn outline-2 hover:border-mainColor border-mainColor hover:bg-mainColor outline-mainColor hover:outline-mainColor bg-mainColor text-white fixed top-[78px] right-0">
-        لتحميل الملف اضغط هنا
+               <i class="fa-solid fa-arrow-down-to-bracket"></i>
+
       </button>
       <div ref={containerRef} style={{ height: "100vh" }} />
     </div>
