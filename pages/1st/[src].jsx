@@ -6,17 +6,19 @@ export default function oldExamsPdf() {
   const { src } = router.query;
   const containerRef = useRef(null);
 
+  console.log(router.query.src);
   useEffect(() => {
     const container = containerRef.current;
     let PSPDFKit;
-
+  console.log(router.query.src);
     (async function () {
+        console.log(router.query.src);
       PSPDFKit = await import("pspdfkit");
       
       if (PSPDFKit) {
         PSPDFKit.unload(container);
       }
-      
+        console.log(router.query.src);
       await PSPDFKit.load({
         container,
       document: `/1st/oldExams/${src}.pdf`,
@@ -25,6 +27,7 @@ export default function oldExamsPdf() {
     })();
 
     return () => PSPDFKit && PSPDFKit.unload(container);
+    console.log(router.query.src);
   }, []);
   return (
     <div>
