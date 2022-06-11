@@ -8,6 +8,8 @@ body {
   font-family: "Cairo", sans-serif;
   direction: rtl;
   transition: all ease 0.3s;
+    overscroll-behavior-y: contain;
+
 }
 * {
   box-sizing: border-box;
