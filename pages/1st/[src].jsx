@@ -30,7 +30,7 @@ export default function oldExamsPdf() {
 
   return (
     <div >
-      <button className="btn outline-2 text-white hover:border-mainColor bg-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor fixed top-1 z-50">
+      <button style={{ transform: "translateX(-70%)" }} className="btn outline-2 text-white hover:border-mainColor bg-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor fixed top-1 z-50">
         <Link href={`/1st/oldExams/${src}.pdf`}>
           <a className=" hover:text-white">لتحميل الملف اضغط هنا</a>
         </Link>
