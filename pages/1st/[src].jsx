@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import {  useRef } from "react";
 import { useRouter } from "next/router";
 
 export default function oldExamsPdf() {
@@ -6,7 +6,7 @@ export default function oldExamsPdf() {
   const { src } = router.query;
   const containerRef = useRef(null);
 
-   useEffect(() => {
+   
 
     if (typeof window !== "undefined") {
       console.log(router.query.src);
@@ -24,14 +24,14 @@ export default function oldExamsPdf() {
         });
 
       };
-        return () => PSPDFKit && PSPDFKit.unload(container);
+
       if (typeof src !== "undefined") {
         getDoc(src);
       }
 
-      
+        return () => PSPDFKit && PSPDFKit.unload(container);      
     }
-  }, []);
+  
 
 
   return (
