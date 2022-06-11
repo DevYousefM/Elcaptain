@@ -22,14 +22,14 @@ export default function oldExamsPdf() {
           document: `/1st/oldExams/${src}.pdf`,
           baseUrl: `${window.location.protocol}//${window.location.host}/`,
         });
-
+         return () => PSPDFKit && PSPDFKit.unload(container);  
       };
 
       if (typeof src !== "undefined") {
         getDoc(src);
       }
 
-        return () => PSPDFKit && PSPDFKit.unload(container);      
+            
     }
   
 
