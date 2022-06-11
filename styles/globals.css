@@ -8,8 +8,7 @@ body {
   font-family: "Cairo", sans-serif;
   direction: rtl;
   transition: all ease 0.3s;
-    overscroll-behavior-y: contain;
-
+  overscroll-behavior-y: contain;
 }
 * {
   box-sizing: border-box;
@@ -23,4 +22,12 @@ body {
 .dropdown-toggle::after {
   margin-right: 5px;
 }
-
+div.PSPDFKit-Error-Message > p {
+  text-align: center;}
+  
+span.PSPDFKit-4wf98g1ha47f4tw6p5xpr51nn7{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+  
