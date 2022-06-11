@@ -29,12 +29,9 @@ export default function oldExamsPdf() {
   }, []);
 
   return (
-                 <div>
-      <button className="z-50 btn outline-2 hover:border-mainColor border-mainColor hover:bg-mainColor outline-mainColor hover:outline-mainColor bg-mainColor fixed top-[78px] right-0">
-               
-                <i className="fa-solid fa-arrow-down-to-bracket text-7xl"></i>
-
-
+     <div>
+      <button className="z-50 btn outline-2 hover:bg-mainColor bg-mainColor text-white fixed top-[76px] right-0">
+        <i class="fa-solid fa-download"></i>{" "}
       </button>
       <div ref={containerRef} style={{ height: "100vh" }} />
     </div>
