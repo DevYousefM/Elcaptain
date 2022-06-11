@@ -29,7 +29,8 @@ export default function oldExamsPdf() {
   }, []);
 
   return (
-            <div ref={containerRef} style={{ height: "100vh" }} />
+                  style={{ height: "100vh", overscrollBehaviorY: "contain" }}
+
 
   );
 }
