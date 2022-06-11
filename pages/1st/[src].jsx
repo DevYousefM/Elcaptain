@@ -35,7 +35,7 @@ export default function oldExamsPdf() {
           href={`/1st/oldExams/${src}.pdf`}
           download
         >
-          <i class="fa-solid fa-download"></i>{" "}
+          <i className="fa-solid fa-download"></i>{" "}
         </a>
       </button>
       <div ref={containerRef} style={{ height: "100vh" }} />
