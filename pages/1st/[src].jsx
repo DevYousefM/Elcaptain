@@ -29,14 +29,7 @@ export default function oldExamsPdf() {
   }, []);
 
   return (
-        <div className="pt-[72px] relative flex justify-center">
+            <div ref={containerRef} style={{ height: "100vh" }} />
 
-      <button className="btn outline-2 text-white hover:border-mainColor bg-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor absolute z-50 top-0">
-        <Link href={`/1st/oldExams/${src}.pdf`}>
-          <a className=" hover:text-white">لتحميل الملف اضغط هنا</a>
-        </Link>
-      </button>
-      <div ref={containerRef} style={{ height: "100vh" }} />
-    </div>
   );
 }
