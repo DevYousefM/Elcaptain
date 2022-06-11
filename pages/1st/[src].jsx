@@ -27,7 +27,13 @@ export default function oldExamsPdf() {
   }, []);
 
   return (
-    
-    <div ref={containerRef} style={{ height: "100vh" }} />
+    <>
+      <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
+        <Link href={`/1st/oldExams/${src}.pdf`}>
+          <a className=" hover:text-white">لتحميل الملف اضغط هنا</a>
+        </Link>
+      </button>
+      <div ref={containerRef} style={{ height: "100vh" }} />
+    </>
   );
 }
