@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  transition: all ease 0.3s;
+}
+* {
+  box-sizing: border-box;
+}
+.dropdown-item {
+  @apply select-none font-semibold text-right hover:text-white hover:bg-mainColor hover:pr-6 transition-all;
+}
+.navbar-brand {
+  @apply text-2xl absolute mobileM:right-6 mobileM:top-4 largeScreens:top-4 largeScreens:right-5;
+}
+.dropdown-toggle::after {
+  margin-right: 5px;
+}
+iframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
