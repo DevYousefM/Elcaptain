@@ -6,7 +6,8 @@ export default function oldExamsPdf() {
   const { src } = router.query;
   const containerRef = useRef(null);
 
- 
+   useEffect(() => {
+
     if (typeof window !== "undefined") {
       console.log(router.query.src);
       const container = containerRef.current;
@@ -30,6 +31,7 @@ export default function oldExamsPdf() {
 
       
     }
+  }, []);
 
 
   return (
