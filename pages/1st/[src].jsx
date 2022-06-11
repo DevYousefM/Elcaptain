@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
 
 export default function oldExamsPdf() {
   const router = useRouter();
@@ -31,7 +30,6 @@ export default function oldExamsPdf() {
   return (
   <div>
       <button className="z-50 btn outline-2 hover:bg-mainColor1 bg-mainColor1 text-white fixed top-[80px] right-1">
-        {/* <Link href={`/1st/oldExams/${src}.pdf`} download> */}
         <a
           className="hover:text-white"
           href={`/1st/oldExams/${src}.pdf`}
@@ -39,7 +37,6 @@ export default function oldExamsPdf() {
         >
           <i class="fa-solid fa-download"></i>{" "}
         </a>
-        {/* </Link> */}
       </button>
       <div ref={containerRef} style={{ height: "100vh" }} />
     </div>
