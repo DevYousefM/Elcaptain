@@ -1,0 +1,52 @@
+[
+  {
+    "id": "oldSpaha",
+    "content": "اساسيات السباحة",
+    "type": "one_St_Old_Exams"
+  },
+  {
+    "id": "oldMadrp",
+    "content": "اساسيات العاب المضرب",
+    "type": "one_St_Old_Exams"
+  },
+  {
+    "id": "oldTayra",
+    "content": "اساسيات الكرة الطائرة",
+    "type": "one_St_Old_Exams"
+  },
+  {
+    "id": "oldPhysiology",
+    "content": "فسيولوجيا الإنسان",
+    "type": "one_St_Old_Exams"
+  },
+  {
+    "id": "oldElmHaraka",
+    "content": "مبادئ علم الحركة",
+    "type": "one_St_Old_Exams"
+  },
+  {
+    "id": "oldElmNafs",
+    "content": "علم النفس الرياضي",
+    "type": "one_St_Old_Exams"
+  },
+  {
+    "id": "oldTadrees",
+    "content": "مبادئ التدريس",
+    "type": "one_St_Old_Exams"
+  },
+  {
+    "id": "oldEhsa",
+    "content": "الاحصاء التطبيقي",
+    "type": "one_St_Old_Exams"
+  },
+  {
+    "id": "notAvailable",
+    "content": "اساسيات المصارعة",
+    "type": "one_St_Old_Exams"
+  },
+  {
+    "id": "notAvailable",
+    "content": "الجمباز الإيقاعي",
+    "type": "one_St_Old_Exams"
+  }
+]
