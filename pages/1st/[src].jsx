@@ -49,6 +49,7 @@ export async function getStaticPaths() {
   const paramsPaths = btnsObjsArr
     .map((obj) => obj.id)
     .map((id) => ({ params: { src: id } }));
+  console.log(btnsObjsArr);
 
   return {
     paths: paramsPaths,
