@@ -44,6 +44,17 @@ export default function oldExamsPdf() {
     </div>
   );
 }
+export async function getStaticPaths() {
+  const btnsObjsArr = require("./1stApi.json");
+  const paramsPaths = btnsObjsArr
+    .map((obj) => obj.id)
+    .map((id) => ({ params: { src: id } }));
+  console.log(btnsObjsArr);
+  return {
+    paths: paramsPaths,
+    fallback: false,
+  };
+}
 export async function getStaticProps(ctx) {
   return {
     props: {
