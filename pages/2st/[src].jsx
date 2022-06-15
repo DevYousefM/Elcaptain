@@ -29,7 +29,7 @@ export default function oldExamsPdf() {
   }, []);
 
   return (
-    <div className=" pt-24">
+    <div>
       <button className="z-50 btn outline-2 hover:bg-mainColor1 bg-mainColor1 text-white fixed top-[80px] right-1">
         <a className="hover:text-white" href={`/docs/${src}.pdf`} download>
           <i className="fa-solid fa-download"></i>
