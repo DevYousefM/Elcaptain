@@ -19,7 +19,7 @@ export default function questionBanks() {
                   key={Math.random()}
                   className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor"
                 >
-                  <Link href={`/docs/${btn.id}`}>
+                  <Link href={`/2st/${btn.id}`}>
                     <a className="hover:text-white">{btn.content}</a>
                   </Link>
                 </button>
@@ -38,7 +38,7 @@ export default function questionBanks() {
                   key={Math.random()}
                   className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor"
                 >
-                  <Link href={`/docs/${btn.id}`}>
+                  <Link href={`/2st/${btn.id}`}>
                     <a className="hover:text-white">{btn.content}</a>
                   </Link>
                 </button>

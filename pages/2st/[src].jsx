@@ -20,7 +20,7 @@ export default function oldExamsPdf() {
 
       await PSPDFKit.load({
         container,
-        document: `/docs/${src}.pdf`,
+        document: `/2st/${src}.pdf`,
         baseUrl: `${window.location.protocol}//${window.location.host}/`,
       });
     })();
