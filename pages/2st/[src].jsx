@@ -20,7 +20,7 @@ export default function oldExamsPdf() {
 
       await PSPDFKit.load({
         container,
-        document: `/2st/${src}.pdf`,
+        document: `/docs/${src}.pdf`,
         baseUrl: `${window.location.protocol}//${window.location.host}/`,
       });
     })();
@@ -31,7 +31,7 @@ export default function oldExamsPdf() {
   return (
     <div className=" pt-24">
       <button className="z-50 btn outline-2 hover:bg-mainColor1 bg-mainColor1 text-white fixed top-[80px] right-1">
-        <a className="hover:text-white" href={`/2st/${src}.pdf`} download>
+        <a className="hover:text-white" href={`/docs/${src}.pdf`} download>
           <i className="fa-solid fa-download"></i>
         </a>
       </button>
