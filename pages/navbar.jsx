@@ -45,14 +45,18 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item cursor-pointer">
-                      الفرقة الثانية
-                    </a>
+                    <Link href={"/2st/oldExams"}>
+                      <a className="dropdown-item cursor-pointer">
+                        الفرقة الثانية
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item cursor-pointer">
-                      الفرقة الثالثة
-                    </a>
+                    <Link href={"/3st/oldExams"}>
+                      <a className="dropdown-item cursor-pointer">
+                        الفرقة الثالثة
+                      </a>
+                    </Link>
                   </li>
                   <li>
                     <a className="dropdown-item cursor-pointer">
@@ -72,15 +76,17 @@ export default function Navbar() {
                   بنوك الأسئلة
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link href={"/1st/questionBank"}>
+                  <Link href={"/1st/questionBank"}>
+                    <a className="dropdown-item cursor-pointer">
+                      الفرقة الأولى
+                    </a>
+                  </Link>
+                  <li>
+                    <Link href={"/2st/questionBank"}>
                       <a className="dropdown-item cursor-pointer">
-                        الفرقة الأولى
+                        الفرقة الثانية
                       </a>
                     </Link>
-                  <li>
-                    <a className="dropdown-item cursor-pointer">
-                      الفرقة الثانية
-                    </a>
                   </li>
                   <li>
                     <a className="dropdown-item cursor-pointer">
@@ -105,8 +111,8 @@ export default function Navbar() {
                   نتائج امتحانات الميدتيرم
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <Link href={"/1st/examsResult"} >
+                  <li>
+                    <Link href={"/1st/examsResult"}>
                       <a className="dropdown-item cursor-pointer">
                         الفرقة الأولى
                       </a>
@@ -140,8 +146,8 @@ export default function Navbar() {
                   فيديوهات توضيحية
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <Link href={"/1st/videos"}>
+                  <li>
+                    <Link href={"/1st/videos"}>
                       <a className="dropdown-item cursor-pointer">
                         الفرقة الأولى
                       </a>

@@ -1,52 +1,108 @@
 [
   {
+    "id": "notAvailable",
+    "content": "اساسيات المبارزة",
+    "part": "One"
+  },
+  {
+    "id": "notAvailable",
+    "content": " اساسيات المضمار",
+    "part": "One"
+  },
+  {
+    "id": "notAvailable",
+    "content": "اساسيات كرة القدم",
+    "part": "One"
+  },
+  {
+    "id": "notAvailable",
+    "content": "الايقاع الحركي",
+    "part": "One"
+  },
+  {
+    "id": "notAvailable",
+    "content": "مادة التمرينات",
+    "part": "One"
+  },
+  {
+    "id": "notAvailable",
+    "content": "علم التشريح",
+    "part": "One"
+  },
+  {
+    "id": "notAvailable",
+    "content": "فلسفة وتاريخ التربية الرياضية",
+    "part": "One"
+  },
+  {
+    "id": "notAvailable",
+    "content": "مقدمة في الإدارة الرياضية",
+    "part": "One"
+  },
+  {
     "id": "oldSpaha",
     "content": "اساسيات السباحة",
-    "type": "one_St_Old_Exams"
+    "part": "Two",
+    "type": "oldExam"
   },
   {
     "id": "oldMadrp",
     "content": "اساسيات العاب المضرب",
-    "type": "one_St_Old_Exams"
+    "part": "Two",
+    "type": "oldExam"
   },
   {
     "id": "oldTayra",
     "content": "اساسيات الكرة الطائرة",
-    "type": "one_St_Old_Exams"
+    "part": "Two",
+    "type": "oldExam"
   },
   {
     "id": "oldPhysiology",
     "content": "فسيولوجيا الإنسان",
-    "type": "one_St_Old_Exams"
+    "part": "Two",
+    "type": "oldExam"
   },
   {
     "id": "oldElmHaraka",
     "content": "مبادئ علم الحركة",
-    "type": "one_St_Old_Exams"
+    "part": "Two",
+    "type": "oldExam"
   },
   {
     "id": "oldElmNafs",
     "content": "علم النفس الرياضي",
-    "type": "one_St_Old_Exams"
+    "part": "Two",
+    "type": "oldExam"
   },
   {
     "id": "oldTadrees",
     "content": "مبادئ التدريس",
-    "type": "one_St_Old_Exams"
+    "part": "Two",
+    "type": "oldExam"
   },
   {
     "id": "oldEhsa",
     "content": "الاحصاء التطبيقي",
-    "type": "one_St_Old_Exams"
+    "part": "Two",
+    "type": "oldExam"
   },
   {
     "id": "notAvailable",
     "content": "اساسيات المصارعة",
-    "type": "one_St_Old_Exams"
+    "part": "Two",
+    "type": "oldExam"
   },
   {
     "id": "notAvailable",
     "content": "الجمباز الإيقاعي",
-    "type": "one_St_Old_Exams"
+    "part": "Two",
+    "type": "oldExam"
+  },
+  {
+    "id": "بنك الاسئلة العاب المضرب",
+    "content": "اساسيات العاب المضرب",
+    "part": "Two",
+    "type": "sheet"
   }
 ]

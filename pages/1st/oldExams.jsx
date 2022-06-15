@@ -10,37 +10,27 @@ export default function OldExams() {
       <div className="w-full flex flex-col items-center justify-center">
         <h3 className="mt-4 text-mainColor1">مواد الفصل الدراسي الأول</h3>
         <div className="mt-3 w-3/5 gap-2 flex flex-wrap justify-center">
-          <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
-            اساسيات المبارزة
-          </button>
-          <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
-            اساسيات المضمار
-          </button>
-          <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
-            اساسيات كرة القدم
-          </button>
-          <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
-            الايقاع الحركي
-          </button>
-          <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
-            مادة التمرينات
-          </button>
-          <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
-            علم التشريح
-          </button>
-          <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
-            فلسفة وتاريخ التربية الرياضية
-          </button>
-          <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
-            مقدمة في الإدارة الرياضية
-          </button>
+          {btnsObjsArr
+            .filter((y) => y.part == "One")
+            .map((btn) => {
+              return (
+                <button
+                  key={Math.random()}
+                  className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor"
+                >
+                  <Link href={`/1st/${btn.id}`}>
+                    <a className="hover:text-white">{btn.content}</a>
+                  </Link>
+                </button>
+              );
+            })}
         </div>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
         <h3 className="mt-4 text-mainColor1">مواد الفصل الدراسي الثاني</h3>
         <div className="mt-3 w-3/5 gap-2 flex flex-wrap justify-center">
           {btnsObjsArr
-            .filter((y) => y.type == "one_St_Old_Exams")
+            .filter((y) => y.part == "Two" && y.type == "oldExam")
             .map((btn) => {
               return (
                 <button
