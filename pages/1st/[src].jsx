@@ -28,7 +28,7 @@ export default function oldExamsPdf() {
   }, []);
 
   return (
-    <div>
+    <div className=" pt-24">
       <button className="z-50 btn outline-2 hover:bg-mainColor1 bg-mainColor1 text-white fixed top-[80px] right-1">
         <a
           className="hover:text-white"

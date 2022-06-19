@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Videos() {
   return (
     <div className="w-full mt-4 pb-4 items-center flex flex-col border-b-2 ">
@@ -8,7 +10,9 @@ export default function Videos() {
         <h3 className="mt-4 text-mainColor1">مواد الفصل الدراسي الأول</h3>
         <div className="mt-3 w-3/5 gap-2 flex flex-wrap justify-center">
           <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
-            اساسيات المبارزة
+            <Link href={`./videos/1stTerm/mobarza`}>
+              <a className="hover:text-white">اساسيات المبارزة</a>
+            </Link>
           </button>
           <button className="btn outline-2 hover:border-mainColor hover:text-white border-mainColor outline-mainColor hover:outline-mainColor hover:bg-mainColor text-mainColor">
             اساسيات المضمار
